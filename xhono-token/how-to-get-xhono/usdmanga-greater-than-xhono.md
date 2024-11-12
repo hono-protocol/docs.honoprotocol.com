@@ -14,9 +14,9 @@ Users can convert their $MANGA tokens into xHONO tokens. Manga Token holders hav
 
 The conversion formula is as follows:
 
-$$
-Amount\medspace of\medspace xHONO\medspace minted\medspace =\medspace \int \cfrac {1}{(\cfrac {x+A}{A})^2 * B}
-$$
+
+
+<figure><img src="../../.gitbook/assets/conversion_formula.png" alt=""><figcaption></figcaption></figure>
 
 **x** = Amount of $MANGA to be converted into xHONO
 

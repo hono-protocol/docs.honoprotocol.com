@@ -10,9 +10,9 @@ Users can convert their INUKO tokens into xHONO tokens. INUKO holders have the o
 
 ### INUKO to xHONO conversion formula
 
-$$
-Amount\medspace of\medspace xHONO\medspace minted\medspace =\medspace \int \cfrac {1}{(\cfrac {x+A}{A})^2 * B}
-$$
+
+
+<figure><img src="../../.gitbook/assets/conversion_formula.png" alt=""><figcaption></figcaption></figure>
 
 x = Amount of INUKO to be converted to xHONO
 
