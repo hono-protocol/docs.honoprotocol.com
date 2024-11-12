@@ -15,9 +15,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"
-  },
-  "plugins" : ["custom-favicon"],
-	"pluginsConfig" : {
-		"favicon": ".gitbook/assets/favicon.ico"
-	}
+  }
 }
