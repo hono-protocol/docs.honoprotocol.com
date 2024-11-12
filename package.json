@@ -4,7 +4,7 @@
   "description": "Documentation",
   "main": "index.js",
   "scripts": {
-    "build": "gitbook build",
+    "build": "gitbook build && echo 'docs.honoprotocol.com' > _book/CNAME && cp -a .gitbook/assets/favicon.ico _book/gitbook/images/favicon.ico && echo 'include : [\".gitbook\"]' > _book/_config.yml",
     "deploy": "gh-pages -d _book"
   },
   "author": "Developer",
