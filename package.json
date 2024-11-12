@@ -1,0 +1,18 @@
+{
+  "name": "hono-protocol",
+  "version": "1.0.0",
+  "description": "Documentation",
+  "main": "index.js",
+  "scripts": {
+    "build": "gitbook build",
+    "deploy": "gh-pages -d _book"
+  },
+  "author": "Developer",
+  "license": "MIT",
+  "dependencies": {
+    "graceful-fs": "^4.2.11"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
+}
