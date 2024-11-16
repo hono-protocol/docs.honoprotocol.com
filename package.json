@@ -4,7 +4,7 @@
   "description": "Documentation",
   "main": "index.js",
   "scripts": {
-    "build": "gitbook build && echo 'docs.honoprotocol.com' > _book/CNAME && node cleanup-paths.js && node insert-gtag.js ./_book && node prepend-title.js ./_book && node update-site.js",
+    "build": "gitbook build && echo 'docs.honoprotocol.com' > _book/CNAME && node cleanup-paths.js && node insert-gtag.js ./_book && node prepend-title.js ./_book && node update-site.js && node replace-gitbook-links.js",
     "deploy": "gh-pages -d _book"
   },
   "author": "Developer",
