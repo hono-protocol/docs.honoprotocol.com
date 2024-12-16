@@ -2,7 +2,7 @@
 
 HONO Protocol generates sustainable "real yield" from a diversified set of revenue streams, producing income from tangible, revenue-generating activities rather than speculative sources. This approach ensures long-term stability and value growth for the protocol.
 
-1. **Yield-Bearing Backing Asset (wstETH)**\
+1. **Yield-Bearing Backing Asset**\
    HONO is fully backed by wrapped staked ETH (wstETH), which generates reliable price growth in ETH value. As wstETH's price increase, they directly enhance HONO’s value, establishing a strong foundation for the protocol.
 2. **Protocol-Exclusive Arbitrage**\
    HONO Protocol is the exclusive minter and redeemer of HONO, enabling it to capture market premiums through arbitrage. When users buy or sell HONO, the protocol can mint or redeem HONO as necessary to manage the supply, profiting from price differentials. This arbitrage provides a unique revenue stream that benefits both the protocol and its participants.
