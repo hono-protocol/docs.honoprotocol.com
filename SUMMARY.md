@@ -31,13 +31,14 @@
 * [Manga Token](legacy-tokens/manga-token.md)
 * [INUKO](legacy-tokens/inuko.md)
 
+## Technical
+
+* [Contracts](technical/contracts.md)
+* [Service Updates](technical/service-updates.md)
+* [Audits](technical/audits.md)
+
 ***
 
 * [User Risks](user-risks.md)
 * [Privacy Policy](privacy-policy.md)
 * [Terms of Service](terms-of-service.md)
-
-## Technical
-
-* [Contracts](technical/contracts.md)
-* [Service Updates](technical/service-updates.md)
