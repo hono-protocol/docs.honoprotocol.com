@@ -33,6 +33,7 @@
 
     - [Contracts](technical/contracts.md)
     - [Service Updates](technical/service-updates.md)
+    - [Audits](technical/audits.md)
 
 ***
 
