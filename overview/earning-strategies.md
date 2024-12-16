@@ -14,6 +14,6 @@ The HONO token is backed by wstETH, an asset from [LIDO.FI](https://lido.fi/) th
 
 We have received community feedback that some members are relying on our 1:1 xHONO-to-HONO burn mechanism.
 
-Here’s how it works: whenever we distribute income, a portion is allocated to a 1:1 xHONO-to-HONO swap and burn pool. Members holding xHONO can choose to burn their tokens to receive HONO through this mechanism, subject to availability. For detailed information about revenue allocation, please refer to [_Revenue Split_](../hono-mechanics/revenue-split.md).
+Here’s how it works: whenever we distribute income, a portion is allocated to a 1:1 xHONO-to-HONO swap and burn pool. Members holding xHONO can choose to burn their tokens to receive HONO through this mechanism, subject to availability. For detailed information about revenue allocation, please refer to [Emission-Directing Voting Mechanism](../xhono-token/vote-and-claim.md#id-2.-emission-directing-voting-mechanism) and the live ratio on the [Vote page on our DApp](https://app.honoprotocol.com/vote).
 
 **Caution:** This conversion operates on a first-come, first-served basis, with safeguards in place to prevent bot activity. However, due to the competitive nature of this feature, we cannot guarantee consistent earnings for everyone through this method.

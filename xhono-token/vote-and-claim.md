@@ -1,5 +1,7 @@
 # Vote & Claim
 
+Refer to the live ratio on the [Vote page of our DApp](https://app.honoprotocol.com/vote)
+
 ## **xHONO Utilities**
 
 xHONO is the governance token for the HONO Protocol and offers several important utilities that allow holders to participate in decision-making and earn rewards. Here's how it works:
