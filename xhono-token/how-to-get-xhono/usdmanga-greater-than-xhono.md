@@ -1,8 +1,6 @@
----
-description: Burn $MANGA to get xHONO
----
-
 # $MANGA -> xHONO
+
+### Burn $MANGA to get xHONO
 
 Users can convert their $MANGA tokens into xHONO tokens. Manga Token holders have the option to swap their $MANGA for xHONO, with the maximum amount that can be obtained through this conversion capped at **111,922.78 xHONO** tokens.
 
