@@ -1,8 +1,6 @@
----
-description: Comprehensive Harmonizer for Arbitrage Kinetics and Revenue Accumulation
----
-
 # CHAKRA (Protocol Arbitrage)
+
+### Comprehensive Harmonizer for Arbitrage Kinetics and Revenue Accumulation
 
 The **Comprehensive Harmonizer for Arbitrage Kinetics and Revenue Accumulation (CHAKRA)** serves two key functions: maintaining the price stability of HONO relative to its backed value and generating revenue for the protocol. It accomplishes this through two types of arbitrage trades — above peg and below peg arbitrage:
 

@@ -1,6 +1,6 @@
 # INUKO -> xHONO
 
-## **Convert INUKO to xHONO**
+### **Burn INUKO to get xHONO**
 
 Users can convert their INUKO tokens into xHONO tokens. INUKO holders have the option to swap their INUKO for xHONO, with the maximum amount of xHONO tokens that can be obtained capped at **26,441.26 xHONO**.
 

@@ -6,7 +6,7 @@
 
 * [How HONO Protocol Works](overview/how-hono-protocol-works.md)
 * [Real Yield Revenue Resources](overview/real-yield-revenue-resources.md)
-* [Earning Strategy](overview/earning-strategy.md)
+* [Earning Strategies](overview/earning-strategies.md)
 
 ## HONO Mechanics
 
@@ -36,3 +36,8 @@
 * [User Risks](user-risks.md)
 * [Privacy Policy](privacy-policy.md)
 * [Terms of Service](terms-of-service.md)
+
+## Technical
+
+* [Contracts](technical/contracts.md)
+* [Service Updates](technical/service-updates.md)
