@@ -6,4 +6,4 @@ The HONO Protocol is a decentralized financial infrastructure designed to provid
 
 At the core of the protocol are diverse community businesses that generate revenue to sustain HONO’s long-term growth and stability. Additionally, HONO serves as a unique liquidity pair on Uniswap, enhancing the tradability of other ERC20 tokens, and provides a robust backing for new rebasing assets to increase their market appeal. Users can participate by holding HONO to benefit from value appreciation or staking liquidity on Uniswap to earn a share of the protocol’s income.
 
-Through xHONO, the governance token of HONO Protocol, users can engage in protocol decision-making, directing emissions to different revenue pools and shaping the ecosystem's growth trajectory.
+Through xHONO, the governance token of HONO Protocol, users can engage in protocol decision-making, directing revenue emissions to different pools and shaping the ecosystem's growth trajectory.
