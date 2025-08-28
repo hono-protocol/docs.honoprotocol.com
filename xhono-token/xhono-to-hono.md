@@ -1,4 +1,4 @@
-# (Deprecated on 28th Aug, 2025)~~xHONO to HONO~~
+# (Deprecated on 28th Aug, 2025) ~~xHONO to HONO~~
 
 ## **~~xHONO to HONO Conversion~~**
 

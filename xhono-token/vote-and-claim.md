@@ -18,7 +18,7 @@ xHONO holders play a critical role in the governance of the HONO Protocol. As th
 
 * **~~Master Pool Minter~~**~~: This pool converts 10% of incoming master revenue into HONO. Of this, 2% is made available for xHONO holders to convert into HONO, while the remaining 8% is sent to the loan pool for future projects.~~
 
-~~xHONO holders can ~~**~~stake~~**~~ their tokens to adjust how much HONO is allocated to each pool. The default weight distribution:~~
+~~xHONO holders can~~ **~~stake~~** ~~their tokens to adjust how much HONO is allocated to each pool. The default weight distribution:~~
 
 * **~~Loan Pool~~**~~: 800 points (80% of emissions)~~
 * **~~xHONO Pool~~**~~: 200 points (20% of emissions)~~
@@ -39,7 +39,7 @@ Stake your xHONO to decide how we split **10% of HONO Protocol income** between:
 * **DAO Pool** — our growing treasury for future revenue strategies
 * **xHONO Pool** — paid out now to voters who stake here
 
-#### 3.1. How it works
+#### 2.1. How it works
 
 1. **Pick a pool.** Stake xHONO toward **DAO** or **xHONO** (you can split your stake).
 2. **Your stake = your vote.** The more xHONO pointed at a pool, the larger the share of the 10% it receives this period.
@@ -49,17 +49,17 @@ Stake your xHONO to decide how we split **10% of HONO Protocol income** between:
 
 <figure><img src="../.gitbook/assets/HONO_revenue_flow_20250828.png" alt=""><figcaption></figcaption></figure>
 
-#### 3.2. Why the DAO Pool matters
+#### 2.2. Why the DAO Pool matters
 
 Today, the DAO Pool **accumulates**. Soon, it will be **deployed into revenue-generating strategies** to compound protocol income. In short: we’re **stacking dry powder now** so we can **earn more later**.
 
-#### 3.3. Quick notes
+#### 2.3. Quick notes
 
 * **You control the split.** Pool weights are set by how much xHONO users stake **to each pool**.
 * **xHONO Pool pays stakers.** Payouts are algorithmic: **amount staked × time staked** (while your xHONO remains staked).
 * **DAO Pool does not pay out yet.** It’s a treasury for future deployments designed to grow protocol revenue.
 
-#### 3.4. On-page microcopy (tooltips)
+#### 2.4. On-page microcopy (tooltips)
 
 * **“Pool Split”** — The live percentage of the 10% income going to each pool, set by staked xHONO.
 * **“Your Voting Power”** — The effective weight of your stake (amount × time).
