@@ -22,7 +22,7 @@
     - How to get xHONO?
         - [$MANGA -> xHONO](xhono-token/how-to-get-xhono/usdmanga-greater-than-xhono.md)
         - [INUKO -> xHONO](xhono-token/how-to-get-xhono/inuko-greater-than-xhono.md)
-    - [xHONO to HONO](xhono-token/xhono-to-hono.md)
+    - [~~xHONO to HONO~~](xhono-token/xhono-to-hono.md)
 
 - Legacy Tokens
 
