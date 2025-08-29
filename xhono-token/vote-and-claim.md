@@ -32,7 +32,7 @@ xHONO holders play a critical role in the governance of the HONO Protocol. As th
 ~~In summary, xHONO gives holders a voice in the governance of the protocol, allows them to influence key emissions decisions, and offers flexible options for converting and managing their holdings. By participating in governance, staking, and conversion, xHONO holders actively contribute to the growth and evolution of the HONO ecosystem.~~
 
 ### **2. Voting Rewards: Direct 10% of Protocol Income**
-(Updated on Aug 28th, 2025)
+(Updated on Aug 29th, 2025)
 
 Stake your xHONO to decide how we split **10% of HONO Protocol income** between:
 
