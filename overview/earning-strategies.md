@@ -19,7 +19,7 @@ The HONO token is backed by wstETH, an asset from [LIDO.FI](https://lido.fi/) th
 **~~Caution:~~** ~~This conversion operates on a first-come, first-served basis, with safeguards in place to prevent bot activity. However, due to the competitive nature of this feature, we cannot guarantee consistent earnings for everyone through this method.~~
 
 ### Method 3 (Voting Rewards): Staking xHONO to direct emissions to DAO or Reward Pool
-(Updated on Aug 28th, 2025)
+(Updated on Aug 29th, 2025)
 
 Stake your xHONO to direct 10% of protocol income (“emissions”) between the DAO Pool and the xHONO Pool. The split is set by how much xHONO is staked to each pool. If you stake to vote in any of the pool, you’ll earn a share of the rewards, algorithmically time-weighted by amount and duration staked. The DAO Pool is currently accumulating as a treasury for future revenue-generating deployments. Rewards have no fixed schedule and payouts depend on overall platform performance.
 
