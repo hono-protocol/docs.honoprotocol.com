@@ -57,4 +57,4 @@ Today, the DAO Pool **accumulates**. Soon, it will be **deployed into revenue-ge
 
 * **You control the split.** Pool weights are set by how much xHONO users stake **to each pool**.
 * **xHONO Pool pays stakers.** Payouts are algorithmic: **amount staked × time staked** (while your xHONO remains staked).
-* **DAO Pool does not pay out yet.** It’s a treasury for future deployments designed to grow protocol revenue.
+* **DAO Pool is for future growth.** It’s a treasury for future deployments designed to grow protocol revenue.
