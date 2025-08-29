@@ -1,5 +1,20 @@
 # Service Updates
 
+### 29 Aug 2025: Voting Reward
+
+Bug fixes:
+
+* nil
+
+Features:
+
+* Reward Pool for Voting
+* Distributor contract
+* Routing for stETH to ETH
+* HONO V2 arbitrage upgrade
+* Staking for xHONO
+* Migration from 2024 staking contract
+
 #### 13 Aug 2024: HONO V2
 
 Bug fixes:
