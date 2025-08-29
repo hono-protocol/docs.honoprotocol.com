@@ -37,15 +37,15 @@ xHONO holders play a critical role in the governance of the HONO Protocol. As th
 Stake your xHONO to decide how we split **10% of HONO Protocol income** between:
 
 * **DAO Pool** — our growing treasury for future revenue strategies
-* **xHONO Pool** — paid out now to voters who stake here
+* **xHONO Pool** — Distributed to every voter, regardless of pool choice
 
 #### 2.1. How it works
 
 1. **Pick a pool.** Stake xHONO toward **DAO** or **xHONO** (you can split your stake).
 2. **Your stake = your vote.** The more xHONO pointed at a pool, the larger the share of the 10% it receives this period.
-3. **Earn if you back xHONO Pool.** Rewards from the xHONO Pool are shared among its stakers, **time-weighted and amount-weighted**. Longer and larger stakes earn a bigger slice.
+3. **Earn as long as you stake.** Rewards from the xHONO Pool are shared among all staker, **time-weighted and amount-weighted**. Longer and larger stakes earn a bigger slice.
 
-> Example: If votes land **60% DAO / 40% xHONO**, then **6%** of protocol income goes to the DAO Pool (treasury), and **4%** is distributed to xHONO Pool stakers based on stake size and duration.
+> Example: If votes land **60% DAO / 40% xHONO**, then **6%** of protocol income goes to the DAO Pool (treasury), and **4%** is distributed to xHONO Pool.
 
 <figure><img src="../.gitbook/assets/HONO_revenue_flow_20250828.png" alt=""><figcaption></figcaption></figure>
 
@@ -58,9 +58,3 @@ Today, the DAO Pool **accumulates**. Soon, it will be **deployed into revenue-ge
 * **You control the split.** Pool weights are set by how much xHONO users stake **to each pool**.
 * **xHONO Pool pays stakers.** Payouts are algorithmic: **amount staked × time staked** (while your xHONO remains staked).
 * **DAO Pool does not pay out yet.** It’s a treasury for future deployments designed to grow protocol revenue.
-
-#### 2.4. On-page microcopy (tooltips)
-
-* **“Pool Split”** — The live percentage of the 10% income going to each pool, set by staked xHONO.
-* **“Your Voting Power”** — The effective weight of your stake (amount × time).
-* **“xHONO Rewards”** — Your share from the xHONO Pool this period, based on your time-weighted stake.
