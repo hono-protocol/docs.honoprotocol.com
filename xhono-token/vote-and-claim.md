@@ -45,7 +45,7 @@ Stake your xHONO to decide how we split **10% of HONO Protocol income** between:
 2. **Your stake = your vote.** The more xHONO pointed at a pool, the larger the share of the 10% it receives this period.
 3. **Earn as long as you stake.** Rewards from the xHONO Pool are shared among all staker, **time-weighted and amount-weighted**. Longer and larger stakes earn a bigger slice.
 
-> Example: If votes land **60% DAO / 40% xHONO**, then **6%** of protocol income goes to the DAO Pool (treasury), and **4%** is distributed to xHONO Pool.
+> Example: If votes land **60% DAO / 40% xHONO**, then **6%** of protocol income goes to the DAO Pool (treasury), and **4%** is distributed to the xHONO Pool.
 
 <figure><img src="../.gitbook/assets/HONO_revenue_flow_20250828.png" alt=""><figcaption></figcaption></figure>
 
