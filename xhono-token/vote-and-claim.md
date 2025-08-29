@@ -37,7 +37,7 @@ xHONO holders play a critical role in the governance of the HONO Protocol. As th
 Stake your xHONO to decide how we split **10% of HONO Protocol income** between:
 
 * **DAO Pool** — our growing treasury for future revenue strategies
-* **xHONO Pool** — Distributed to every voter, regardless of pool choice
+* **xHONO Pool** — shared with every voter, regardless of pool choice
 
 #### 2.1. How it works
 
