@@ -48,12 +48,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3BQBD4R"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!--
-      Normalize URL before Docsify loads:
-      GitHub Pages adds trailing slash to directory URLs, which causes
-      Docsify to compute incorrect markdown paths (e.g., path/.md).
-      Strip the trailing slash so Docsify sees clean URLs.
-    -->
+    
     <!--
       SPA redirect for GitHub Pages + history mode:
       If we land here from 404.html, restore the original path.
@@ -68,6 +63,12 @@
         })();
     </script>
 
+    <!--
+      Normalize URL before Docsify loads:
+      GitHub Pages adds trailing slash to directory URLs, which causes
+      Docsify to compute incorrect markdown paths (e.g., path/.md).
+      Strip the trailing slash so Docsify sees clean URLs.
+    -->
     <script>
         (function () {
             var path = window.location.pathname;

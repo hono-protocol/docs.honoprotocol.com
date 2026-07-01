@@ -16,7 +16,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://docs.redcarpethq.org';
+const BASE_URL = 'https://docs.honoprotocol.com';
 const DOCS_DIR = __dirname;
 
 // Simple markdown-to-HTML converter for prerendering
@@ -69,7 +69,7 @@ function mdToHtml(md) {
 
 function extractTitle(md) {
     const match = md.match(/^# (.+)$/m);
-    return match ? match[1].trim() : 'RedCarpetHQ Documentation';
+    return match ? match[1].trim() : 'HONO Protocol Documentation';
 }
 
 function extractDescription(md) {
@@ -93,7 +93,7 @@ function extractDescription(md) {
                 .substring(0, 160);
         }
     }
-    return 'RedCarpetHQ Documentation — The AI-Powered Exchange for Tokenized Entertainment Profits';
+    return 'HONO Protocol Documentation — Decentralized Financial Infrastructure for Scalable DEX Liquidity';
 }
 
 function getAllMdFiles(dir, files = []) {
