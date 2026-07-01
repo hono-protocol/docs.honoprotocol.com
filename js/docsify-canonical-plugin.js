@@ -26,7 +26,7 @@
     cleanedPath = cleanedPath.replace(/README$/, ''); // Remove "README" at the end of the path
 
     const { protocol, host } = window.location;
-    const canonicalURL = `${protocol}//${host}/#/${cleanedPath}`;
+    const canonicalURL = `${protocol}//${host}/${cleanedPath}`;
 
     // Create and append the canonical tag
     const canonical = document.createElement('link');

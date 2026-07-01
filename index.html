@@ -48,10 +48,39 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3BQBD4R"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <!--
+      Normalize URL before Docsify loads:
+      GitHub Pages adds trailing slash to directory URLs, which causes
+      Docsify to compute incorrect markdown paths (e.g., path/.md).
+      Strip the trailing slash so Docsify sees clean URLs.
+    -->
+    <!--
+      SPA redirect for GitHub Pages + history mode:
+      If we land here from 404.html, restore the original path.
+    -->
+    <script>
+        (function () {
+            var redirect = sessionStorage.getItem('docsify-redirect');
+            if (redirect) {
+                sessionStorage.removeItem('docsify-redirect');
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+
+    <script>
+        (function () {
+            var path = window.location.pathname;
+            if (path.length > 1 && path.endsWith('/')) {
+                history.replaceState(null, '', path.slice(0, -1) + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
     <div id="app"></div>
     <script>
         // Docsify Configuration
         window.$docsify = {
+            basePath: '/',
             name: 'HONO Protocol Documentation',
             logo: '/.gitbook/assets/hono-protocol-docs-logo.svg',
             loadSidebar: true,
@@ -59,11 +88,17 @@
             subMaxLevel: 0,
             auto2top: true,
             loadFooter: true,
+            routerMode: 'history',
             notFoundPage: '404.md',
             themeable: {
                 readyTransition : true, // default
                 responsiveTables: true  // default
             },
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md',
+                '/.*/_footer.md': '/_footer.md'
+            },
+
             share: {
                 options: {
                     color: '#ff164e'
@@ -76,7 +111,22 @@
             customPageTitle: {
                 prefix: "HONO Protocol Documentation",
                 separator: "|"
-            }
+            },
+
+            // GA4 virtual page view tracking on every route change
+            plugins: [
+                function (hook, vm) {
+                    hook.doneEach(function () {
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            event: 'page_view',
+                            page_location: window.location.href,
+                            page_path: window.location.pathname,
+                            page_title: document.title
+                        });
+                    });
+                }
+            ]
         };
     </script>
 
