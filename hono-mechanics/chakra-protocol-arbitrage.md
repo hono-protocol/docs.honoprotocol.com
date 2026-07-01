@@ -11,6 +11,6 @@ The **Comprehensive Harmonizer for Arbitrage Kinetics and Revenue Accumulation (
 
 One of the key benefits of CHAKRA is that all arbitrage trades are executed within a single transaction and only occur if a profit can be made. This ensures that the protocol remains profitable at all times and that HONO is always fully backed by its underlying asset.
 
-A significant advantage is that the protocol does not compete for miner extractable value (MEV). Since MangaFi is the sole entity permitted to mint and redeem HONO, the protocol ensures that arbitrage trades are always executed profitably before any third party can intervene.
+A significant advantage is that the protocol does not compete for miner extractable value (MEV). Since HONO Protocol is the sole entity permitted to mint and redeem HONO, the protocol ensures that arbitrage trades are always executed profitably before any third party can intervene.
 
 Additionally, the single-block mint/redemption arbitrage allows the protocol to outperform market participants attempting to exploit price premiums or discounts, ensuring that it consistently captures value for the ecosystem.
