@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="https://docs.redcarpethq.org/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="description" content="RedCarpetHQ">
+    <meta name="keywords" content="RedCarpetHQ">
+    <title></title>
+
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/images/docs-og.png">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:title" content="">
+    <meta name="twitter:image" content="/images/docs-og.png">
+    <meta property="twitter:description" content="">
+
+    <!-- Themes (light + dark) -->
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Google Analytics — MUST match NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID in frontend-v3/.env -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-69YFYPVYH0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // send_page_view: false prevents duplicate — doneEach plugin handles ALL page views
+    gtag('config', 'G-69YFYPVYH0', { send_page_view: false });
+    </script>
+    
+    <style>
+    :root {
+        --theme-hue: 346;
+        --theme-color: #ff164e;
+    }
+
+    /* Ask AI Widget Styles */
+    #ask-ai-widget {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        z-index: 1000;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .ask-ai-button {
+        background: var(--theme-color);
+        color: white;
+        padding: 12px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 4px 15px rgba(255, 22, 78, 0.4);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        font-weight: 600;
+    }
+
+    .ask-ai-button:hover {
+        transform: scale(1.05) translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 22, 78, 0.6);
+    }
+
+    .ask-ai-menu {
+        position: absolute;
+        bottom: 70px;
+        left: 0;
+        background: #1a1a1a;
+        border: 1px solid #333;
+        border-radius: 16px;
+        width: 200px;
+        display: none;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .ask-ai-menu.active {
+        display: flex;
+        animation: fadeInScale 0.2s ease-out;
+    }
+
+    @keyframes fadeInScale {
+        from { opacity: 0; transform: scale(0.9) translateY(10px); }
+        to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .ask-ai-header {
+        padding: 12px 15px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #888;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #333;
+    }
+
+    .ask-ai-option {
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        transition: background 0.2s;
+        color: #eee;
+    }
+
+    .ask-ai-option:hover {
+        background: #2a2a2a;
+    }
+
+    .platform-icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+    }
+
+    /* Fine-tune ChatGPT icon to visually balance with Gemini */
+    .ask-ai-option[data-platform="chatgpt"] .platform-icon {
+        transform: scale(0.9);
+    }
+
+    .ai-icon {
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { opacity: 0.8; }
+        50% { opacity: 1; }
+        100% { opacity: 0.8; }
+    }
+    </style>
+</head>
+<body>
+    <!--
+      SPA redirect for GitHub Pages + history mode:
+      If we land here from 404.html, restore the original path.
+    -->
+    <script>
+        (function () {
+            var redirect = sessionStorage.getItem('docsify-redirect');
+            if (redirect) {
+                sessionStorage.removeItem('docsify-redirect');
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+
+    <!--
+      Normalize URL before Docsify loads:
+      GitHub Pages adds trailing slash to directory URLs, which causes
+      Docsify to compute incorrect markdown paths (e.g., path/.md).
+      Strip the trailing slash so Docsify sees clean URLs.
+    -->
+    <script>
+        (function () {
+            var path = window.location.pathname;
+            if (path.length > 1 && path.endsWith('/')) {
+                history.replaceState(null, '', path.slice(0, -1) + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
+
+    <div id="app"></div>
+    <script>
+        // Docsify Configuration
+        window.$docsify = {
+            basePath: '/',
+            name: 'RedCarpetHQ Documentation',
+            logo: '/images/docs-logo.svg',
+            loadSidebar: true,
+            loadNavbar: false,
+            loadFooter: true,
+            coverpage: false,
+            onlyCover: false,
+            maxLevel: 4,
+            subMaxLevel: 3,
+            auto2top: true,
+            homepage: 'README.md',
+            routerMode: 'history',
+            notFoundPage: '404.md',
+            
+            // Search configuration
+            search: {
+                maxAge: 86400000,
+                paths: 'auto',
+                placeholder: 'Search documentation...',
+                noData: 'No results found',
+                depth: 6,
+                hideOtherSidebarContent: false
+            },
+            
+            // Theme configuration
+            themeable: {
+                readyTransition: true,
+                responsiveTables: true
+            },
+            
+            // Pagination
+            pagination: {
+                previousText: '← Previous',
+                nextText: 'Next →',
+                crossChapter: true,
+                crossChapterText: true
+            },
+            
+            // Share plugin
+            share: {
+                options: {
+                    color: '#ff164e'
+                },
+                reddit: true,
+                linkedin: true,
+                facebook: true,
+                twitter: true,
+            },
+            
+            // Custom page title
+            customPageTitle: {
+                prefix: "RedCarpetHQ Documentation",
+                separator: "|"
+            },
+            
+            // Tabs plugin
+            tabs: {
+                persist: true,
+                sync: true,
+                theme: 'classic',
+                tabComments: true,
+                tabHeadings: true
+            },
+            
+            // Copy code plugin
+            copyCode: {
+                buttonText: 'Copy',
+                errorText: 'Error',
+                successText: 'Copied!'
+            },
+            
+            // Alias for cleaner URLs
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md',
+                '/.*/_footer.md': '/_footer.md'
+            },
+
+            // GA4 virtual page view tracking on every route change
+            plugins: [
+                function (hook, vm) {
+                    hook.doneEach(function () {
+                        if (typeof gtag === 'function') {
+                            gtag('event', 'page_view', {
+                                page_location: window.location.href,
+                                page_path: window.location.pathname,
+                                page_title: document.title,
+                                send_to: 'G-69YFYPVYH0'
+                            });
+                        }
+                    });
+                }
+            ]
+        };
+    </script>
+
+    <!-- Required -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+
+    <!-- Recommended Plugins -->
+    <script src="/js/docsify-canonical-plugin.js"></script>
+    <script src="/js/docsify-metatitle.js"></script>
+    <script src="/js/docsify-metadescription.js"></script>
+    <script src="/js/docsify-ask-ai.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script>
+    
+    <!-- Search -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+    
+    <!-- Image zoom -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+    
+    <!-- Copy code -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+    
+    <!-- Tabs -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+    
+    <!-- Pagination -->
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    
+    <!-- Footer -->
+    <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+    
+    <!-- Share -->
+    <script src="//unpkg.com/docsify-share/build/index.min.js"></script>
+    
+    <!-- Syntax highlighting -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-solidity.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-typescript.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+</body>
+</html>
