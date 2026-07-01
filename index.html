@@ -128,16 +128,12 @@
                     });
                 },
 
-                // Fix logo to always go to root, add back button
+                // Fix logo href to root, add back button
                 function (hook, vm) {
                     hook.mounted(function () {
                         var logoLink = document.querySelector('.app-name-link');
                         if (logoLink) {
-                            logoLink.addEventListener('click', function (e) {
-                                e.preventDefault();
-                                e.stopPropagation();
-                                window.location.href = '/';
-                            });
+                            logoLink.href = '/';
                         }
 
                         var backBtn = document.createElement('button');
