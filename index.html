@@ -126,6 +126,28 @@
                             page_title: document.title
                         });
                     });
+                },
+
+                // Fix logo to always go to root, add back button
+                function (hook, vm) {
+                    hook.mounted(function () {
+                        var logoLink = document.querySelector('.app-name-link');
+                        if (logoLink) {
+                            logoLink.addEventListener('click', function (e) {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                window.location.href = '/';
+                            });
+                        }
+
+                        var backBtn = document.createElement('button');
+                        backBtn.id = 'docsify-back-btn';
+                        backBtn.innerHTML = '← Back';
+                        backBtn.title = 'Go back';
+                        backBtn.style.cssText = 'position:fixed;top:20px;right:20px;z-index:100;padding:8px 16px;background:#ff164e;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:14px;font-family:inherit;';
+                        backBtn.onclick = function () { window.history.back(); };
+                        document.body.appendChild(backBtn);
+                    });
                 }
             ]
         };
